@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle Administrador</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo_particip_perso.css">
+    <script src="https://kit.fontawesome.com/721b8f7618.js" crossorigin="anonymous"></script>
+
+    
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenedor">
+            <h1 class="logo">EMERGENCIA SANITARIA</h1>
+            <i class="fas fa-bars" id="btn-button"></i>
+            <nav class="nav" id="nav">
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" style="text-decoration:none" href="ini_administrador.html" >Inicio</a></li>
+                    <li class="menu__item"><a class="menu__link select" style="text-decoration:none" href="detalle.html">Detalle</a></li>
+                    <li class="menu__item"><a class="menu__link" style="text-decoration:none" href="acercade3.html">Acerca de</a></li>
+                    <li class="menu__item"><a class="menu__link" style="text-decoration:none" href="ingresar.html">Cerrar Sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="breadcrumb">
+        <div class="container">
+          <ol class="breadcrumb">
+            <li><a href="detalle.html">Panel de Control</a></li>
+            <li class="active">Participantes Solicitados</li>
+          </ol>
+        </div>
+      </section>
+  
+      <section id="main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="list-group">
+                <a href="detalle.html" class="list-group-item active color-principal">
+                  <span class="fas fa-columns" aria-hidden="true"></span> Panel de Control
+                </a>
+                
+                <a href="#" class="list-group-item"><span class="fas fa-pen-square" aria-hidden="true"></span> Participantes Solicitados<span class="badge">5</span></a>
+                
+              </div>
+  
+             
+            </div>
+            <div class="col-md-9">
+              
+              <div class="panel panel-default">
+                <div class="panel-heading main-color-bg">
+                  <h3 class="panel-title">Participantes Solicitados</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="row">
+                        <div class="col-md-12">
+                            <input class="form-control" type="hidden" placeholder="Filtrar entradas..." >
+                        </div>
+                  </div>
+                  <br>
+                  <table class="table table-striped table-hover">
+                        <tr>
+                          <th>Nombres</th>
+                          <th>Email</th>
+                          <th>Cedula</th>
+                          
+                          <th></th>
+                        </tr>
+                        <tr id="ocultar">
+                          <td>Mario Gonzales<img src="css/ico/check.svg" id="mostrar1" width="15px" style="display: none;"></td>
+                            <td>mario@gmail.com</td>
+                          <td>131459786-3</td>
+                          
+                          <td><button class="btn btn-default" href="#" onclick="cimg1();">Aprobar</button> <button class="btn btn-danger" href="#" onclick="cimg5();">Rechazar</button></td> 
+                        </tr>
+                        <tr id="oculta">
+                          <td>Jose Delgado<img src="css/ico/check.svg" id="mostrar2" width="15px" style="display: none;" ></td>
+                          <td>jose@gmail.com</td>
+                          <td>135159753-6</td>
+                          
+                          <td><button class="btn btn-default" href="#" onclick="cimg2();">Aprobar</button> <button class="btn btn-danger" href="#" onclick="cimg6();">Rechazar</button> </td>
+                        </tr>
+                        <tr id="ocultar">
+                            <td>Marcela Peréz<img src="css/ico/check.svg" id="mostrar11" width="15px" style="display: none;"></td>
+                              <td>marcela@gmail.com</td>
+                            <td>131459888-2</td>
+                            
+                            <td><button class="btn btn-default" href="#" onclick="cimg11();">Aprobar</button> <button class="btn btn-danger" href="#" onclick="cimg7();">Rechazar</button></td> 
+                          </tr>  
+                          <tr id="oculta">
+                            <td>Pablo Mera<img src="css/ico/check.svg" id="mostrar1" width="15px" style="display: none;"></td>
+                              <td>pablo@gmail.com</td>
+                            <td>131654821-3</td>
+                            
+                            <td><button class="btn btn-default" href="#" onclick="cimg88();">Aprobar</button> <button class="btn btn-danger" href="#" onclick="cimg8();">Rechazar</button></td> 
+                          </tr>
+                          <tr id="ocultar">
+                            <td>Laura Meza<img src="css/ico/check.svg" id="mostrar1" width="15px" style="display: none;"></td>
+                              <td>laura@gmail.com</td>
+                            <td>131712781-0</td>
+                            
+                            <td><button class="btn btn-default" href="#" onclick="cimg99();">Aprobar</button> <button class="btn btn-danger" href="#" onclick="cimg9();">Rechazar</button></td> 
+                          </tr>
+                    </table>
+                </div>
+                </div>
+  
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <script src="js/menu.js"></script>
+      <script src="js/partici_acep_canc.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+    
+</body>
+</html>

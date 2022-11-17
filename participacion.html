@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>Participa</title>
+    <link rel="stylesheet" href="css/estilo_participacion.css">
+    <script src="https://kit.fontawesome.com/721b8f7618.js" crossorigin="anonymous"></script>
+    <script src="js/participacion.js"></script> 
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <h1 class="logo">EMERGENCIA SANITARIA</h1>
+            <i class="fas fa-bars" id="btn-button"></i>
+            <nav class="nav" id="nav">
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="ini_participante.html">Inicio</a></li>
+                    <li class="menu__item"><a class="menu__link select" href="participacion.html">Participantes</a></li>
+                    <li class="menu__item"><a class="menu__link" href="acercade2.html">Acerca de</a></li>
+                    <li class="menu__item"><a class="menu__link" href="registro.html">Cerrar Sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1 class="h11">Inscribete y participa</h1>
+    <form action="" method="get" id="idser" class="form-register" onsubmit="return validar();">
+        <h2 class="form__titulo">Ingrese sus datos</h2>
+        <div class="contenedor-inputs">
+            
+            
+            <label class="input-100">Tipo de documento:</label>
+            <p class="input-48"><input type="radio" name="transporte" value="1" required>   Cedula de identidad</p>
+            <p class="input-48"><input type="radio" name="transporte" value="2">   Pasaporte</p>
+
+            <input type="text" id="cedula" name="cedula" placeholder="No. Cédula/Pasaporte" minlength="3" maxlength="15" required pattern="[0-9]+" class="input-100" required>
+            <input type="text" id="nombre" name="nombre" placeholder="Apellidos/Nombres" minlength="3" maxlength="50" class="input-100">
+            <input type="email" id="correo" name="correo" placeholder="Email" class="input-100">
+            <input type="text" id="telefono" name="telefono" placeholder="Teléfono" minlength="3" maxlength="20" required pattern="[0-9]+" class="input-100">
+            
+            
+            <input type="submit" id="btn" value="ENVIAR" class="btn-enviar" >
+        </div>
+        
+    </form>
+    <footer class="footer">
+            
+            <p class="copy">&copy; Emergencia sanitaria 2022 - Jimmy Giler</p>
+        </footer>
+        <script src="js/menu.js"></script>
+    </body>
+</html>

@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 2px;
+    font-family: cursive;
+    background-image: url(https://i0.wp.com/medioambienteynaturaleza.com/wp-content/uploads/2015/08/Fondos-de-pantalla-de-naturaleza-aj.jpg?resize=1110%2C833&ssl=1);
+    background-size: contain;
+}
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 100px;
+    background-color: #7bd6a1;
+    
+}
+.contenedor {
+    margin: auto;
+    width: 97%;
+    font-size: larger;
+    
+}
+/* Estilo de header*/
+.header {
+    height: 60px;
+}
+.header .contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo, .fa-bars {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: #ffffff;
+    font-size: 50px;
+}
+.fa-bars {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #00bd10;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+.fa-bars:hover {
+    background: #fff;
+    color: #00bd10;
+    transition: 0.3s;
+}
+/* Estilos menu*/
+.nav {
+    position: absolute;
+    padding: 5px;
+    top: 75px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+}
+.menu__link {
+    border: rgba(204, 204, 204, 0.18) 1px solid;
+    padding: 15px;
+    color: #0B0B0C;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px 25px 25px 25px;
+    font-size: 15px;
+    margin-top: 0px;
+    font-size: 25px;
+    margin-top: 7px;
+    font-family: fantasy;
+}
+.menu__link:hover {
+    background: white;
+    color: #0B0B0C;
+}
+.mostrar {
+    left: 0;
+}
+.select {
+    background: #004d06;
+    color: #00bd10;
+}
+
+.h11 {
+    margin-top: 40px;
+    color: #0B0B0C;
+    text-align: center;
+}
+
+.form-register{
+    width: 95%;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius:  8px;
+
+}
+
+.form__titulo {
+    background: #117747;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 5px solid rgb(17, 17, 17);
+}
+
+.contenedor-inputs {
+    background: #a2e9d7;
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+label {
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 3px;
+    background-color: #9094CA;
+}
+
+textarea {
+
+    min-height: 75px;
+    max-height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+select {
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid darkgray;
+}
+
+input{
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid darkgray;
+}
+
+.input-48 {
+    width: 33%;
+    text-align: center;
+    background-color: #0ca37d;
+}
+
+.input-50 {
+    width: 50%;
+    text-align: center;
+}
+
+.input-100 {
+    width: 100%;
+}
+
+.btn-enviar {
+    background: rgb(216, 122, 44);
+    color: #fff;
+    margin: auto;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.btn-enviar:hover {
+    background: #d10000;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.btn-cancelar {
+    background: crimson;
+    color: #fff;
+    margin: auto;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.btn-cancelar:hover {
+    background: #00bd10;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.btn-enviar:active {
+    transform: scale(1.15);
+}
+
+.form__link {
+    width: 100%;
+    margin: 7px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer {
+    background: #9094CA;
+    color: #000000;
+    padding: 1px;
+    text-align: center;
+}
+
+
+.footer .social [class^="fab fa-"] {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 6px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+}
+.footer1 {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    margin-top: 80px;
+}
+
+.footer1 .social [class^="fab fa-"] {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 6px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+}
+@media(min-width:580px) {
+    .logo {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: #ffffff;
+    font-size: 26px;
+}
+.logo:hover {
+    color: #000000;
+}
+}
+@media(min-width:1024px) {
+
+    .contenedor {
+        width: 1000px;
+    }
+
+    .nav {
+        position: static;
+        width: auto;
+        margin: 10px;
+    }
+    .menu {
+        display: flex;
+    }
+    .fa-bars {
+        visibility: hidden;;
+    }
+    .menu__link{
+        background: #AFEEEE;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    .select {
+        background: #AFEEEE;
+        color: #6495ED;
+    }
+}
+@media(min-width:1072px) {
+
+    .contenedor {
+        width: 1060px;
+    }
+}
+@media(min-width:1216px) {
+
+    .contenedor {
+        width: 1180px;
+    }
+}

@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 2px;
+    font-family: cursive;
+    background-image: url('https://img.freepik.com/fotos-premium/mano-que-sostiene-bola-globo-cristal-crecimiento-arbol-naturaleza-verde-desenfoque-fondo_34152-1993.jpg?w=2000');
+   
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1.5px;
+}
+.contenedor {
+    margin: auto;
+    width: 97%;
+}
+/* Estilo de header*/
+.header {
+    height: 60px;
+}
+.header .contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo, .fa-bars {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: #ffffff;
+    font-size: 26px;
+}
+.fa-bars {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #00bd10;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+.fa-bars:hover {
+    background: #fff;
+    color: #00bd10;
+    transition: 0.3s;
+}
+/* Estilos menu*/
+.nav {
+    position: absolute;
+    padding: 5px;
+    top: 75px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+}
+.menu__link {
+    border: rgba(204, 204, 204, 0.18) 1px solid;
+    padding: 15px;
+    color: #0B0B0C;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px 25px 25px 25px;
+    font-size: 15px;
+    margin-top: 0px;
+}
+.menu__link:hover {
+    background: white;
+    color: #0B0B0C;
+}
+.mostrar {
+    left: 0;
+}
+.select {
+    background: #004d06;
+    color: #00bd10;
+}
+
+.h11 {
+    margin-top: 110px;
+    color: #fff;
+    text-align: center;
+}
+
+.form-register{
+    width: 95%;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius:  8px;
+
+}
+
+.form__titulo {
+    background: darkgreen;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 5px solid crimson;
+}
+
+
+.contenedor-inputs {
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+label {
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+textarea {
+
+    min-height: 75px;
+    max-height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+select {
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid darkgray;
+}
+
+input{
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid darkgray;
+}
+
+.input-48 {
+    width: 33%;
+    text-align: center;
+}
+
+.input-50 {
+    width: 50%;
+    text-align: center;
+}
+
+.input-100 {
+    width: 100%;
+}
+
+.btn-enviar {
+    background: crimson;
+    color: #fff;
+    margin: auto;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.btn-enviar:hover {
+    background: #00bd10;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.btn-cancelar {
+    background: crimson;
+    color: #fff;
+    margin: auto;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.btn-cancelar:hover {
+    background: #00bd10;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.btn-enviar:active {
+    transform: scale(1.15);
+}
+
+.form__link {
+    width: 100%;
+    margin: 7px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer {
+    background: #9094CA;
+    color: #000000;
+    padding: 1px;
+    text-align: center;
+}
+
+
+.footer .social [class^="fab fa-"] {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 6px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+}
+.footer1 {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    margin-top: 80px;
+}
+
+.footer1 .social [class^="fab fa-"] {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 6px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+}
+
+  /* Custom */
+  .color-principal, .panel-default > .panel-heading{
+    background-color: #27a150 !important;
+    border-color: #004d06 !important;
+    color:#000000 !important;
+  }
+  
+  /* Breadcrumb */
+  .breadcrumb{
+    background:#55cc79;
+    color:#333333;
+    margin-top: 40px;
+  }
+  
+  .breadcrumb a{
+    color:#333333;
+  }
+  
+  /* Progress Bars */
+  .barra-progreso{
+    background:#4FC3F7;
+    color:#ffffff;
+  }
+  
+  .dash-box{
+    text-align:center;
+  }
+  
+@media(min-width:580px) {
+    .logo {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: #ffffff;
+    font-size: 26px;
+}
+.logo:hover {
+    color: #000000;
+}
+}
+@media(min-width:1024px) {
+
+    .contenedor {
+        width: 1000px;
+    }
+
+    .nav {
+        position: static;
+        width: auto;
+        margin: 10px;
+    }
+    .menu {
+        display: flex;
+    }
+    .fa-bars {
+        visibility: hidden;;
+    }
+    .menu__link{
+        background: #AFEEEE;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    .select {
+        background: #AFEEEE;
+        color: #6495ED;
+    }
+}
+@media(min-width:1072px) {
+
+    .contenedor {
+        width: 1060px;
+    }
+}
+@media(min-width:1216px) {
+
+    .contenedor {
+        width: 1180px;
+    }
+}

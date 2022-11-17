@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/estilo_ingreso.css">
+    <script src="https://kit.fontawesome.com/721b8f7618.js" crossorigin="anonymous"></script>
+    <script src="js/registro.js"></script>
+
+
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <h1 class="logo">EMERGENCIA SANITARIA</h1>
+            <i class="fas fa-bars" id="btn-button"></i>
+            <nav class="nav" id="nav">
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="menu.html">Inicio</a></li>
+                    <li class="menu__item"><a class="menu__link" href="acercade.html">Acerca de </a></li>
+                    <li class="menu__item"><a class="menu__link" href="ingresar.html">Ingresar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>        
+    <h1 class="h11">REGISTRO</h1>
+    <form action="" method="get" class="form-register" onsubmit="return validar();">
+        <h2 class="form__titulo">Crear cuenta</h2>
+        <div class="contenedor-inputs">
+            <!-- Nombre y apellido.
+            Campo obligatorio, entre 6-20 carácteres
+            Sólo se permiten letras -->
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" minlength="3" maxlength="20" required pattern="[A-Za-z]+" class="input-48">
+            <input type="text" id="apellido" name="apellido" placeholder="Apellidos" minlength="3" maxlength="20" required pattern="[A-Za-z]+" class="input-48">
+            <input type="email" id="correo" name="correo" placeholder="Correo electronico" class="input-100" required>
+            <input type="text" id="usuario" name="usuario" placeholder="Usuario" class="input-48" required>
+            <!-- clave.
+            Campo obligatorio, entre 6-20 carácteres
+            Sólo se permite cualquier caracter -->
+            <input type="password" id="clave" name="clave" placeholder="Contraseña" minlength="5" maxlength="20" class="input-48" required>
+            <!-- telefono.
+            Campo obligatorio, entre 6-20 carácteres
+            Sólo se permiten numeros -->
+            <input type="text" id="telefono" name="telefono" placeholder="Telefono" minlength="6" maxlength="20" required pattern="[0-9]+" class="input-100">
+            <input type="submit" id="btn" value="Registrar" href="ingresar.html" class="btn-enviar" >
+            
+        </div>
+    </form>
+    <footer class="footer">
+        
+        <p class="copy">&copy; Emergencia sanitaria 2022 - Jimmy Giler</p>
+    </footer>
+    <script src="js/menu.js"></script>
+</body>
+</html>
+
+
+

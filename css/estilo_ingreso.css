@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0px;
+    font-family: cursive;
+    background-image: url(https://img.freepik.com/fotos-premium/concepto-salvar-mundo-salvar-medio-ambiente-mundo-hierba-fondo-verde-bokeh_34998-580.jpg?w=2000);
+    
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1.5px;
+}
+.contenedor {
+    margin: auto;
+    width: 97%;
+}
+/* Estilo de header*/
+.header {
+    height: 60px;
+}
+.header .contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo, .fa-bars {
+   font-family: 'Oleo Script Swash Caps', cursive;
+    color: #f7f4f4;
+    font-size: 26px;
+}
+
+.fa-bars {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #00bd10;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+.fa-bars:hover {
+    background: #fff;
+    color: #00bd10;
+    transition: 0.3s;
+}
+/* Estilos menu*/
+.nav {
+    position: absolute;
+    padding: 5px;
+    top: 75px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+}
+
+.menu__link {
+    border: rgba(204, 204, 204, 0.18) 1px solid;
+    padding: 15px;
+    color: #0B0B0C;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px 25px 25px 25px;
+    font-size: 25px;
+    margin-top: 7px;
+	font-family: fantasy;
+}
+.menu__link:hover {
+    background: rgb(187, 9, 9);
+    color: #0B0B0C;
+}
+.mostrar {
+    left: 0;
+}
+.select {
+    background: #004d06;
+    color: #00bd10;
+}
+
+.h11 {
+    margin-top: 40px;
+    color: #0B0B0C;
+    text-align: center;
+}
+
+.label1 {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.form-register{
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    border-radius:  8px;
+
+}
+
+.form__titulo {
+    background: #62ee79;
+    color: rgb(128, 155, 132);
+    padding: 20px;
+    text-align: center;
+    font-weight: 200;
+    font-size: 70px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 5px solid rgb(20, 220, 97);
+    font: 2rem 'Fira Sans', fantasy;
+}
+
+.contenedor-inputs {
+    background: #eea887;
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+input{
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid darkgray;
+}
+
+.input-48 {
+    width: 48%;
+}
+
+.input-100 {
+    width: 100%;
+}
+
+.btn-enviar {
+    background: rgb(119, 163, 219);
+    color: #fff;
+    margin: auto;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.btn-enviar:hover {
+    background: #da6e44;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.btn-cancelar {
+    background: crimson;
+    color: #fff;
+    margin: auto;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.btn-cancelar:hover {
+    background: #00CED1;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.btn-enviar:active {
+    transform: scale(1.15);
+}
+
+.form__link {
+    width: 100%;
+    margin: 7px;
+    text-align: center;
+    font-size: 14px;
+}
+.footer {
+    background: #df6231;
+    color: #000000;
+    padding: 1px;
+    text-align: center;
+}
+
+
+.footer .social [class^="fab fa-"] {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 6px;
+    background: rgb(255, 254, 254);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+}
+.footer1 {
+    background: #9094CA;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.footer1 .social [class^="fab fa-"] {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 6px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+}
+@media(min-width:580px) {
+.logo {
+      font-family: 'Oleo Script Swash Caps', cursive;
+    color: #ffffff;
+    font-size: 26px;
+}
+.logo:hover {
+    color: #000000;
+}
+}
+@media(min-width:1024px) {
+
+    .contenedor {
+        width: 1000px;
+    }
+
+    .nav {
+        position: static;
+        width: auto;
+        margin: 10px;
+    }
+    .menu {
+        display: flex;
+    }
+    .fa-bars {
+        visibility: hidden;;
+    }
+    .menu__link{
+        background: #0cb4b4;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    .select {
+        background: #98e6db;
+        color: #151516;
+    }
+}
